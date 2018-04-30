@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self' https;  script-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src *;">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' https;  script-src 'self'; img-src *;">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
 
 <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World " + new Date();
+  document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "\n" + "Hello World " + new Date();
 }
 </script>
 
